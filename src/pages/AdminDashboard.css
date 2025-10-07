@@ -1,0 +1,100 @@
+/* AdminDashboard.css */
+
+.admin-dashboard {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #ffb86c; /* soft orange text */
+  background: linear-gradient(180deg, #0d0f2b, #1b1f3e);
+  border-radius: 12px;
+}
+
+.admin-dashboard h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff7f50;
+}
+
+.dashboard-summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-card {
+  border-radius: 10px;
+  background-color: #1b1f3e;
+  padding: 15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  transition: 0.3s box-shadow, 0.3s transform;
+  color: #ffb86c;
+}
+
+.order-card:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  transform: translateY(-2px);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.delete-btn {
+  padding: 5px 10px;
+  background-color: #ff4c4c;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #ff0000;
+}
+
+.order-items {
+  margin-top: 10px;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  border-bottom: 1px dashed #444;
+  padding-bottom: 5px;
+}
+
+.order-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.order-total {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: right;
+}
+
+.no-orders {
+  text-align: center;
+  color: #888;
+  margin-top: 20px;
+}
