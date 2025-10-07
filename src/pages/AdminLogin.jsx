@@ -64,7 +64,6 @@ export default function AdminLogin({ onNavigate }) {
           {error && <p className="error">{error}</p>}
           <button type="submit">Login</button>
         </form>
-        <p className="hint">Default: admin / admin123</p>
       </div>
     </div>
   );
