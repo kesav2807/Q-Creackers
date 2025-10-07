@@ -31,7 +31,15 @@ export default function Header({ onNavigate, currentPage }) {
                 onClick={() => onNavigate('cart')}
               >
                 Cart ({getItemCount()})
+              </button>  
+
+              <button 
+                 className="nav-btn"
+                onClick={() => onNavigate('about')}
+              >
+                About
               </button>
+              
               <button 
                 className="nav-btn"
                 onClick={() => onNavigate('admin-login')}
