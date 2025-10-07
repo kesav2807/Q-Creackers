@@ -7,6 +7,7 @@ import CartPage from './pages/CartPage';
 import AdminLogin from './pages/AdminLogin';
 import AdminDashboard from './pages/AdminDashboard';
 import './App.css';
+import About from './pages/About';
 
 function AppContent() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -26,6 +27,8 @@ function AppContent() {
         return <AdminLogin onNavigate={setCurrentPage} />;
       case 'admin':
         return <AdminDashboard />;
+      case 'about':
+        return<About/>
       default:
         return <HomePage />;
     }
