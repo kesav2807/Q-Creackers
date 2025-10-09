@@ -10,7 +10,7 @@ export default function Header({ onNavigate, currentPage }) {
       <div className="header-container">
         <div className="logo-section" onClick={() => onNavigate('home')}>
           <img 
-            src="/attached_assets/Gemini_Generated_Image_g4cneig4cneig4cn_1759810759665.png" 
+            src="https://ik.imagekit.io/wgoylquru/New%20Folder/New%20Folder/img/Gemini_Generated_Image_g4cneig4cneig4cn.png?updatedAt=1760016526067" 
             alt="Q Crackers Logo" 
             className="logo"
           />
