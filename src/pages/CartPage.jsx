@@ -10,7 +10,7 @@ export default function CartPage() {
   const [customerAddress, setCustomerAddress] = useState('');
   const [showSuccess, setShowSuccess] = useState(false);
 
-  const adminWhatsAppNumber = '8095100466'; 
+  const adminWhatsAppNumber = '+91 99522 79211'; 
 
   const handleSendOrder = () => {
     if (!customerName || !customerPhone || !customerAddress) {
