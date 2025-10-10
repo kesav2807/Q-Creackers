@@ -1,10 +1,21 @@
 import { useCart } from '../context/CartContext';
+import { toast } from 'react-toastify';
+import './ProductCard.css';
 
 export default function ProductCard({ product }) {
   const { addToCart } = useCart();
 
   const handleAddToCart = () => {
     addToCart(product);
+
+    // ✅ Show success popup
+    toast.success(`${product.name} added to cart! 🛒`, {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      pauseOnHover: true,
+      theme: "colored",
+    });
   };
 
   return (
