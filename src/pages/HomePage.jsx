@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import ProductCard from '../components/ProductCard';
 import FilterBar from '../components/FilterBar';
 import { products } from '../data/products';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function HomePage() {
   const [filteredProducts, setFilteredProducts] = useState(products);
@@ -27,6 +29,18 @@ export default function HomePage() {
 
   return (
     <div className="home-page">
+      {/* ✅ Toast notification setup */}
+      <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        pauseOnHover
+        draggable
+        theme="colored"
+      />
+
       <div className="hero-section">
         <h2>Welcome to Q Crackers</h2>
         <p>Your trusted source for quality crackers</p>
